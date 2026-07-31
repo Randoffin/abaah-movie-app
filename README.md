@@ -4,7 +4,7 @@ AbaahMovieApp is a full-stack Movie & TV Show Discovery and Watchlist platform b
 
 ---
 
-## 🌟 Key Features
+## Key Features
 
 1. **OMDb & Cinema Catalog Integration:**
    - Real-time search and detailed view for movies and TV series.
@@ -24,7 +24,7 @@ AbaahMovieApp is a full-stack Movie & TV Show Discovery and Watchlist platform b
 
 ---
 
-## 📁 Required Project Documentation Files
+## Required Project Documentation Files
 
 As requested by the prompt, the following developer documentation files are included in the repository:
 
@@ -34,7 +34,7 @@ As requested by the prompt, the following developer documentation files are incl
 
 ---
 
-## 🚀 Tech Stack & Architecture
+## Tech Stack & Architecture
 
 - **Frontend:** React 19, TypeScript, Tailwind CSS, Lucide React icons.
 - **Backend:** Node.js Express server (`server.ts`) bundled via `esbuild`.
