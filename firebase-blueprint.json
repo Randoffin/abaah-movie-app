@@ -1,0 +1,71 @@
+{
+  "entities": {
+    "users": {
+      "title": "Users",
+      "description": "User profile metadata",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "email": { "type": "string" },
+        "displayName": { "type": "string" },
+        "photoURL": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "favoriteGenres": { "type": "array", "items": { "type": "string" } }
+      },
+      "required": ["id", "email"]
+    },
+    "watchlists": {
+      "title": "Watchlist Items",
+      "description": "Movies and TV shows saved by users",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "imdbID": { "type": "string" },
+        "title": { "type": "string" },
+        "year": { "type": "string" },
+        "type": { "type": "string" },
+        "poster": { "type": "string" },
+        "addedAt": { "type": "string" },
+        "status": { "type": "string" },
+        "userRating": { "type": "number" },
+        "notes": { "type": "string" }
+      },
+      "required": ["userId", "imdbID", "title"]
+    },
+    "reviews": {
+      "title": "Movie Reviews",
+      "description": "User community reviews for movies",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "imdbID": { "type": "string" },
+        "movieTitle": { "type": "string" },
+        "userId": { "type": "string" },
+        "userName": { "type": "string" },
+        "userPhoto": { "type": "string" },
+        "rating": { "type": "number" },
+        "reviewText": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "likesCount": { "type": "number" }
+      },
+      "required": ["imdbID", "userId", "rating", "reviewText"]
+    },
+    "customLists": {
+      "title": "Custom Curated Lists",
+      "description": "User created movie collections",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "userName": { "type": "string" },
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "movieIds": { "type": "array", "items": { "type": "string" } },
+        "isPublic": { "type": "boolean" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["userId", "title"]
+    }
+  }
+}
